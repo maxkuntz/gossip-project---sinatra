@@ -34,7 +34,6 @@ class Gossip
     gossips = self.all
     gossips[id].author = new_author
     gossips[id].content = new_content
-    # Je vide le fichier et je le rempli avec les nouvelles valeurs
     CSV.open('./db/gossip.csv', 'w') { gossips.each { |gossip| gossip.save }}
   end
 
