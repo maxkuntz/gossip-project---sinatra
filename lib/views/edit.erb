@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Edit a gossip</title>
+  </head>
+  <body>
+    <h1>Edit a gossip</h1>
+    <p>Edit ton potin <%= params['id'] %> via le formulaire ci-dessous</p>
+    <form action='/gossips/<%= params['id'] %>/edit' method='POST'>
+      <% gossips = Gossip.all %>
+      Saisi ici ton nom : <input type='text' name='gossip_author' value="<%= gossips[id].author%>"/><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value="<%= gossips[id].content%>"/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
