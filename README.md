@@ -27,5 +27,5 @@ Installation des Gems:
 Lancement du serveur:
 <code>$ shotgun -p 4567</code>
 
-Lien de la page d'acceuil:
+Lien de la page d'accueil:
 <code>http://localhost:4567/</code>
